@@ -15,10 +15,5 @@ int main() {
     parallactUserVisitor visitor;
     visitor.visit(parser.program());
 
-    std::ofstream out("out.txt");
-    if (out.is_open()) {
-        out << visitor.code;
-    }
-
     return 0;
 }

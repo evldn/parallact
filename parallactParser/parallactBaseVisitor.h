@@ -1,5 +1,5 @@
 
-// Generated from parallact.g4 by ANTLR 4.13.1
+// Generated from ./parallact.g4 by ANTLR 4.13.1
 
 #pragma once
 
@@ -19,7 +19,7 @@ public:
     return visitChildren(ctx);
   }
 
-  virtual std::any visitParallelMpiOmp(parallactParser::ParallelMpiOmpContext *ctx) override {
+  virtual std::any visitFuncDeclaration(parallactParser::FuncDeclarationContext *ctx) override {
     return visitChildren(ctx);
   }
 
@@ -27,15 +27,31 @@ public:
     return visitChildren(ctx);
   }
 
-  virtual std::any visitStatement(parallactParser::StatementContext *ctx) override {
+  virtual std::any visitInput(parallactParser::InputContext *ctx) override {
     return visitChildren(ctx);
   }
 
-  virtual std::any visitAssignment(parallactParser::AssignmentContext *ctx) override {
+  virtual std::any visitOutput(parallactParser::OutputContext *ctx) override {
     return visitChildren(ctx);
   }
 
-  virtual std::any visitForStatement(parallactParser::ForStatementContext *ctx) override {
+  virtual std::any visitParamList(parallactParser::ParamListContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitAssigment(parallactParser::AssigmentContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitRelyClause(parallactParser::RelyClauseContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitType(parallactParser::TypeContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitNone(parallactParser::NoneContext *ctx) override {
     return visitChildren(ctx);
   }
 
@@ -44,10 +60,6 @@ public:
   }
 
   virtual std::any visitLiteral(parallactParser::LiteralContext *ctx) override {
-    return visitChildren(ctx);
-  }
-
-  virtual std::any visitType(parallactParser::TypeContext *ctx) override {
     return visitChildren(ctx);
   }
 

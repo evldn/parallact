@@ -1,23 +1,23 @@
 grammar parallact;
 
-program : function+;
+program : funcDeclaration+;
 
-function : 'parallel with' standart=('mpi' | 'openmp') block #ParallelMpiOmp
-			;
-			
-block : '{' statement* '}';
+funcDeclaration : 'function' IDENTIFIER block;
 
-statement : assignment ';'
-			| forStatement;
-assignment : type IDENTIFIER '=' expression
-			| IDENTIFIER '=' expression
-			| IDENTIFIER'++'
-			| IDENTIFIER'--'
-			| IDENTIFIER'+=' expression
-			| IDENTIFIER'-=' expression
-			;
+block : '{'
+            input  ';'
+            output ';'
+         '}';
 
-forStatement: 'for' '(' (type assignment | assignment | IDENTIFIER) ';' expression ';' assignment ')' block;
+input : 'inputs:' paramList?;
+output : 'output:' assigment;
+
+paramList : assigment (',' assigment)*;
+
+assigment : type (IDENTIFIER | IDENTIFIER relyClause) | none;
+relyClause : '(' 'rely' IDENTIFIER ')';
+type : IDENTIFIER;
+none : 'none';
 
 expression : literal
 		   | expression op=('<' | '>') expression
@@ -29,8 +29,8 @@ expression : literal
 literal : INT
         | STRING
         ;
-type : 'int' | 'float' | 'double' ;
+
 INT : [0-9]+;
 STRING : '"' ~["]* '"' ;
-IDENTIFIER : [a-zA-Z]+ ;
+IDENTIFIER : [a-zA-Z:<>]+ ;
 WS: [ \t\r\n]+ -> skip;

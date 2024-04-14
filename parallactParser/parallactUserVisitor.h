@@ -4,41 +4,47 @@
 #include "parallactBaseVisitor.h"
 
 #include <iostream>
-#include <string>
+#include <cstring>
 #include <vector>
 
 class parallactUserVisitor : public parallactBaseVisitor {
 public:
-    std::string code;
-    bool MPI = false;
-    bool OpenMP = false;
-
-    virtual std::any visitParallelMpiOmp(parallactParser::ParallelMpiOmpContext *ctx) override {
-        if (ctx->standart->getType() == 2) {
-            std::cout << "We on mpi" << std::endl;
-            code += "int rank, size;\n"
-                    "MPI_Init();\n"
-                    "MPI_Comm_rank(MPI_COMM_WORLD, &rank);\n"
-                    "MPI_Comm_size(MPI_COMM_WORLD, &size);\n";
-            MPI = true;
+    std::any visitFuncDeclaration(parallactParser::FuncDeclarationContext *ctx) override {
+        std::string nameFunction = ctx->IDENTIFIER()->getText();
+        std::ofstream out("generateFiles/" + nameFunction + ".hpp");
+        std::string nameFunctionUpper = nameFunction;
+        std::transform(nameFunctionUpper.begin(), nameFunctionUpper.end(), nameFunctionUpper.begin(), ::toupper);
+        out << "#ifndef " + nameFunctionUpper + "_HPP" << std::endl;
+        out << "#define " + nameFunctionUpper + "_HPP" << std::endl << std::endl;
+        out << "#include <vector>" << std::endl;
+        for (parallactParser::AssigmentContext* assigment : ctx->block()->input()->paramList()->assigment()) {
+            if (assigment->relyClause()) {
+                out << "#include \"" << assigment->relyClause()->IDENTIFIER()->getText() << ".hpp\"" << std::endl;
+            }
         }
+        out << std::endl;
+        std::string typeOutput;
+        if (ctx->block()->output()->assigment()->none()) {
+            typeOutput = "void";
+        } else if (ctx->block()->output()->assigment()->type()) {
+            typeOutput = ctx->block()->output()->assigment()->type()->getText();
+        }
+        std::string paramList;
+        for (parallactParser::AssigmentContext* assigment : ctx->block()->input()->paramList()->assigment()) {
+            paramList += assigment->type()->getText() + " " + assigment->IDENTIFIER()->getText() + ", ";
+        }
+        paramList.pop_back();
+        paramList.pop_back();
+        std::string funcDecl = typeOutput + " " + nameFunction + "(" + paramList + ")";
+        out << funcDecl << ";" << std::endl << std::endl;
+        out << "#endif // " + nameFunctionUpper + "_HPP";
+        out.close();
+
+        out.open("generateFiles/" + nameFunction + ".cpp");
+        out << "#include \"" + nameFunction + ".hpp\"" << std::endl << std::endl;
+        out << funcDecl << " {" << std::endl;
+        out << "\t " << "// TODO: write a code" << std::endl;
+        out << "}";
         return visitChildren(ctx);
-    }
-
-    virtual std::any visitForStatement(parallactParser::ForStatementContext* ctx) override {
-        std::cout << "We on for" << std::endl;
-        if (MPI) {
-            code += "int n = " + ctx->expression()->expression().at(1)->getText() + ";\n";
-            code += "int local_n = n / size;\n";
-            code += "int start = rank * local_n;\n";
-            code += "int end = (rank + 1) * local_n;\n";
-            code += "for (" + ctx->type()->getText() + " "
-                + ctx->assignment().at(0)->IDENTIFIER()->getText() + " = " + "start; "
-                + ctx->expression()->expression().at(0)->getText() + " < " + "end; "
-                + ctx->assignment().at(1)->IDENTIFIER()->getText() + "++)" + " {\n";
-            code += "\t // your code\n";
-            code += "}";
-        }
-        return 0;
     }
 };
