@@ -65,33 +65,34 @@ void parallactParserInitialize() {
     }
   );
   static const int32_t serializedATNSegment[] = {
-  	4,1,19,96,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,6,2,7,
+  	4,1,19,97,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,6,2,7,
   	7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,1,0,4,0,26,8,0,11,0,12,0,27,1,
   	1,1,1,1,1,1,1,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,3,1,3,3,3,43,8,3,1,4,1,4,
-  	1,4,1,5,1,5,1,5,5,5,51,8,5,10,5,12,5,54,9,5,1,6,1,6,1,6,1,6,3,6,60,8,
-  	6,1,6,3,6,63,8,6,1,7,1,7,1,7,1,7,1,7,1,8,1,8,1,9,1,9,1,10,1,10,1,10,1,
-  	10,1,10,1,10,1,10,3,10,81,8,10,1,10,1,10,1,10,1,10,1,10,1,10,5,10,89,
-  	8,10,10,10,12,10,92,9,10,1,11,1,11,1,11,0,1,20,12,0,2,4,6,8,10,12,14,
-  	16,18,20,22,0,3,1,0,12,13,1,0,14,15,1,0,16,17,92,0,25,1,0,0,0,2,29,1,
-  	0,0,0,4,33,1,0,0,0,6,40,1,0,0,0,8,44,1,0,0,0,10,47,1,0,0,0,12,62,1,0,
-  	0,0,14,64,1,0,0,0,16,69,1,0,0,0,18,71,1,0,0,0,20,80,1,0,0,0,22,93,1,0,
-  	0,0,24,26,3,2,1,0,25,24,1,0,0,0,26,27,1,0,0,0,27,25,1,0,0,0,27,28,1,0,
-  	0,0,28,1,1,0,0,0,29,30,5,1,0,0,30,31,5,18,0,0,31,32,3,4,2,0,32,3,1,0,
-  	0,0,33,34,5,2,0,0,34,35,3,6,3,0,35,36,5,3,0,0,36,37,3,8,4,0,37,38,5,3,
-  	0,0,38,39,5,4,0,0,39,5,1,0,0,0,40,42,5,5,0,0,41,43,3,10,5,0,42,41,1,0,
-  	0,0,42,43,1,0,0,0,43,7,1,0,0,0,44,45,5,6,0,0,45,46,3,12,6,0,46,9,1,0,
-  	0,0,47,52,3,12,6,0,48,49,5,7,0,0,49,51,3,12,6,0,50,48,1,0,0,0,51,54,1,
-  	0,0,0,52,50,1,0,0,0,52,53,1,0,0,0,53,11,1,0,0,0,54,52,1,0,0,0,55,59,3,
-  	16,8,0,56,60,5,18,0,0,57,58,5,18,0,0,58,60,3,14,7,0,59,56,1,0,0,0,59,
-  	57,1,0,0,0,60,63,1,0,0,0,61,63,3,18,9,0,62,55,1,0,0,0,62,61,1,0,0,0,63,
-  	13,1,0,0,0,64,65,5,8,0,0,65,66,5,9,0,0,66,67,5,18,0,0,67,68,5,10,0,0,
-  	68,15,1,0,0,0,69,70,5,18,0,0,70,17,1,0,0,0,71,72,5,11,0,0,72,19,1,0,0,
-  	0,73,74,6,10,-1,0,74,81,3,22,11,0,75,76,5,8,0,0,76,77,3,20,10,0,77,78,
-  	5,10,0,0,78,81,1,0,0,0,79,81,5,18,0,0,80,73,1,0,0,0,80,75,1,0,0,0,80,
-  	79,1,0,0,0,81,90,1,0,0,0,82,83,10,4,0,0,83,84,7,0,0,0,84,89,3,20,10,5,
-  	85,86,10,3,0,0,86,87,7,1,0,0,87,89,3,20,10,4,88,82,1,0,0,0,88,85,1,0,
-  	0,0,89,92,1,0,0,0,90,88,1,0,0,0,90,91,1,0,0,0,91,21,1,0,0,0,92,90,1,0,
-  	0,0,93,94,7,2,0,0,94,23,1,0,0,0,8,27,42,52,59,62,80,88,90
+  	3,4,47,8,4,1,5,1,5,1,5,5,5,52,8,5,10,5,12,5,55,9,5,1,6,1,6,1,6,1,6,3,
+  	6,61,8,6,1,6,3,6,64,8,6,1,7,1,7,1,7,1,7,1,7,1,8,1,8,1,9,1,9,1,10,1,10,
+  	1,10,1,10,1,10,1,10,1,10,3,10,82,8,10,1,10,1,10,1,10,1,10,1,10,1,10,5,
+  	10,90,8,10,10,10,12,10,93,9,10,1,11,1,11,1,11,0,1,20,12,0,2,4,6,8,10,
+  	12,14,16,18,20,22,0,3,1,0,12,13,1,0,14,15,1,0,16,17,94,0,25,1,0,0,0,2,
+  	29,1,0,0,0,4,33,1,0,0,0,6,40,1,0,0,0,8,44,1,0,0,0,10,48,1,0,0,0,12,63,
+  	1,0,0,0,14,65,1,0,0,0,16,70,1,0,0,0,18,72,1,0,0,0,20,81,1,0,0,0,22,94,
+  	1,0,0,0,24,26,3,2,1,0,25,24,1,0,0,0,26,27,1,0,0,0,27,25,1,0,0,0,27,28,
+  	1,0,0,0,28,1,1,0,0,0,29,30,5,1,0,0,30,31,5,18,0,0,31,32,3,4,2,0,32,3,
+  	1,0,0,0,33,34,5,2,0,0,34,35,3,6,3,0,35,36,5,3,0,0,36,37,3,8,4,0,37,38,
+  	5,3,0,0,38,39,5,4,0,0,39,5,1,0,0,0,40,42,5,5,0,0,41,43,3,10,5,0,42,41,
+  	1,0,0,0,42,43,1,0,0,0,43,7,1,0,0,0,44,46,5,6,0,0,45,47,3,10,5,0,46,45,
+  	1,0,0,0,46,47,1,0,0,0,47,9,1,0,0,0,48,53,3,12,6,0,49,50,5,7,0,0,50,52,
+  	3,12,6,0,51,49,1,0,0,0,52,55,1,0,0,0,53,51,1,0,0,0,53,54,1,0,0,0,54,11,
+  	1,0,0,0,55,53,1,0,0,0,56,60,3,16,8,0,57,61,5,18,0,0,58,59,5,18,0,0,59,
+  	61,3,14,7,0,60,57,1,0,0,0,60,58,1,0,0,0,61,64,1,0,0,0,62,64,3,18,9,0,
+  	63,56,1,0,0,0,63,62,1,0,0,0,64,13,1,0,0,0,65,66,5,8,0,0,66,67,5,9,0,0,
+  	67,68,5,18,0,0,68,69,5,10,0,0,69,15,1,0,0,0,70,71,5,18,0,0,71,17,1,0,
+  	0,0,72,73,5,11,0,0,73,19,1,0,0,0,74,75,6,10,-1,0,75,82,3,22,11,0,76,77,
+  	5,8,0,0,77,78,3,20,10,0,78,79,5,10,0,0,79,82,1,0,0,0,80,82,5,18,0,0,81,
+  	74,1,0,0,0,81,76,1,0,0,0,81,80,1,0,0,0,82,91,1,0,0,0,83,84,10,4,0,0,84,
+  	85,7,0,0,0,85,90,3,20,10,5,86,87,10,3,0,0,87,88,7,1,0,0,88,90,3,20,10,
+  	4,89,83,1,0,0,0,89,86,1,0,0,0,90,93,1,0,0,0,91,89,1,0,0,0,91,92,1,0,0,
+  	0,92,21,1,0,0,0,93,91,1,0,0,0,94,95,7,2,0,0,95,23,1,0,0,0,9,27,42,46,
+  	53,60,63,81,89,91
   };
   staticData->serializedATN = antlr4::atn::SerializedATNView(serializedATNSegment, sizeof(serializedATNSegment) / sizeof(serializedATNSegment[0]));
 
@@ -388,8 +389,8 @@ parallactParser::OutputContext::OutputContext(ParserRuleContext *parent, size_t 
   : ParserRuleContext(parent, invokingState) {
 }
 
-parallactParser::AssigmentContext* parallactParser::OutputContext::assigment() {
-  return getRuleContext<parallactParser::AssigmentContext>(0);
+parallactParser::ParamListContext* parallactParser::OutputContext::paramList() {
+  return getRuleContext<parallactParser::ParamListContext>(0);
 }
 
 
@@ -408,6 +409,7 @@ std::any parallactParser::OutputContext::accept(tree::ParseTreeVisitor *visitor)
 parallactParser::OutputContext* parallactParser::output() {
   OutputContext *_localctx = _tracker.createInstance<OutputContext>(_ctx, getState());
   enterRule(_localctx, 8, parallactParser::RuleOutput);
+  size_t _la = 0;
 
 #if __cplusplus > 201703L
   auto onExit = finally([=, this] {
@@ -420,8 +422,16 @@ parallactParser::OutputContext* parallactParser::output() {
     enterOuterAlt(_localctx, 1);
     setState(44);
     match(parallactParser::T__5);
-    setState(45);
-    assigment();
+    setState(46);
+    _errHandler->sync(this);
+
+    _la = _input->LA(1);
+    if (_la == parallactParser::T__10
+
+    || _la == parallactParser::IDENTIFIER) {
+      setState(45);
+      paramList();
+    }
    
   }
   catch (RecognitionException &e) {
@@ -474,17 +484,17 @@ parallactParser::ParamListContext* parallactParser::paramList() {
   });
   try {
     enterOuterAlt(_localctx, 1);
-    setState(47);
+    setState(48);
     assigment();
-    setState(52);
+    setState(53);
     _errHandler->sync(this);
     _la = _input->LA(1);
     while (_la == parallactParser::T__6) {
-      setState(48);
-      match(parallactParser::T__6);
       setState(49);
+      match(parallactParser::T__6);
+      setState(50);
       assigment();
-      setState(54);
+      setState(55);
       _errHandler->sync(this);
       _la = _input->LA(1);
     }
@@ -546,26 +556,26 @@ parallactParser::AssigmentContext* parallactParser::assigment() {
     exitRule();
   });
   try {
-    setState(62);
+    setState(63);
     _errHandler->sync(this);
     switch (_input->LA(1)) {
       case parallactParser::IDENTIFIER: {
         enterOuterAlt(_localctx, 1);
-        setState(55);
+        setState(56);
         type();
-        setState(59);
+        setState(60);
         _errHandler->sync(this);
-        switch (getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 3, _ctx)) {
+        switch (getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 4, _ctx)) {
         case 1: {
-          setState(56);
+          setState(57);
           match(parallactParser::IDENTIFIER);
           break;
         }
 
         case 2: {
-          setState(57);
-          match(parallactParser::IDENTIFIER);
           setState(58);
+          match(parallactParser::IDENTIFIER);
+          setState(59);
           relyClause();
           break;
         }
@@ -578,7 +588,7 @@ parallactParser::AssigmentContext* parallactParser::assigment() {
 
       case parallactParser::T__10: {
         enterOuterAlt(_localctx, 2);
-        setState(61);
+        setState(62);
         none();
         break;
       }
@@ -633,13 +643,13 @@ parallactParser::RelyClauseContext* parallactParser::relyClause() {
   });
   try {
     enterOuterAlt(_localctx, 1);
-    setState(64);
-    match(parallactParser::T__7);
     setState(65);
-    match(parallactParser::T__8);
+    match(parallactParser::T__7);
     setState(66);
-    match(parallactParser::IDENTIFIER);
+    match(parallactParser::T__8);
     setState(67);
+    match(parallactParser::IDENTIFIER);
+    setState(68);
     match(parallactParser::T__9);
    
   }
@@ -688,7 +698,7 @@ parallactParser::TypeContext* parallactParser::type() {
   });
   try {
     enterOuterAlt(_localctx, 1);
-    setState(69);
+    setState(70);
     match(parallactParser::IDENTIFIER);
    
   }
@@ -733,7 +743,7 @@ parallactParser::NoneContext* parallactParser::none() {
   });
   try {
     enterOuterAlt(_localctx, 1);
-    setState(71);
+    setState(72);
     match(parallactParser::T__10);
    
   }
@@ -807,28 +817,28 @@ parallactParser::ExpressionContext* parallactParser::expression(int precedence) 
   try {
     size_t alt;
     enterOuterAlt(_localctx, 1);
-    setState(80);
+    setState(81);
     _errHandler->sync(this);
     switch (_input->LA(1)) {
       case parallactParser::INT:
       case parallactParser::STRING: {
-        setState(74);
+        setState(75);
         literal();
         break;
       }
 
       case parallactParser::T__7: {
-        setState(75);
-        match(parallactParser::T__7);
         setState(76);
-        expression(0);
+        match(parallactParser::T__7);
         setState(77);
+        expression(0);
+        setState(78);
         match(parallactParser::T__9);
         break;
       }
 
       case parallactParser::IDENTIFIER: {
-        setState(79);
+        setState(80);
         match(parallactParser::IDENTIFIER);
         break;
       }
@@ -837,24 +847,24 @@ parallactParser::ExpressionContext* parallactParser::expression(int precedence) 
       throw NoViableAltException(this);
     }
     _ctx->stop = _input->LT(-1);
-    setState(90);
+    setState(91);
     _errHandler->sync(this);
-    alt = getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 7, _ctx);
+    alt = getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 8, _ctx);
     while (alt != 2 && alt != atn::ATN::INVALID_ALT_NUMBER) {
       if (alt == 1) {
         if (!_parseListeners.empty())
           triggerExitRuleEvent();
         previousContext = _localctx;
-        setState(88);
+        setState(89);
         _errHandler->sync(this);
-        switch (getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 6, _ctx)) {
+        switch (getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 7, _ctx)) {
         case 1: {
           _localctx = _tracker.createInstance<ExpressionContext>(parentContext, parentState);
           pushNewRecursionContext(_localctx, startState, RuleExpression);
-          setState(82);
+          setState(83);
 
           if (!(precpred(_ctx, 4))) throw FailedPredicateException(this, "precpred(_ctx, 4)");
-          setState(83);
+          setState(84);
           antlrcpp::downCast<ExpressionContext *>(_localctx)->op = _input->LT(1);
           _la = _input->LA(1);
           if (!(_la == parallactParser::T__11
@@ -866,7 +876,7 @@ parallactParser::ExpressionContext* parallactParser::expression(int precedence) 
             _errHandler->reportMatch(this);
             consume();
           }
-          setState(84);
+          setState(85);
           expression(5);
           break;
         }
@@ -874,10 +884,10 @@ parallactParser::ExpressionContext* parallactParser::expression(int precedence) 
         case 2: {
           _localctx = _tracker.createInstance<ExpressionContext>(parentContext, parentState);
           pushNewRecursionContext(_localctx, startState, RuleExpression);
-          setState(85);
+          setState(86);
 
           if (!(precpred(_ctx, 3))) throw FailedPredicateException(this, "precpred(_ctx, 3)");
-          setState(86);
+          setState(87);
           antlrcpp::downCast<ExpressionContext *>(_localctx)->op = _input->LT(1);
           _la = _input->LA(1);
           if (!(_la == parallactParser::T__13
@@ -889,7 +899,7 @@ parallactParser::ExpressionContext* parallactParser::expression(int precedence) 
             _errHandler->reportMatch(this);
             consume();
           }
-          setState(87);
+          setState(88);
           expression(4);
           break;
         }
@@ -898,9 +908,9 @@ parallactParser::ExpressionContext* parallactParser::expression(int precedence) 
           break;
         } 
       }
-      setState(92);
+      setState(93);
       _errHandler->sync(this);
-      alt = getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 7, _ctx);
+      alt = getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 8, _ctx);
     }
   }
   catch (RecognitionException &e) {
@@ -952,7 +962,7 @@ parallactParser::LiteralContext* parallactParser::literal() {
   });
   try {
     enterOuterAlt(_localctx, 1);
-    setState(93);
+    setState(94);
     _la = _input->LA(1);
     if (!(_la == parallactParser::INT
 

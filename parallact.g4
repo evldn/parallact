@@ -10,7 +10,7 @@ block : '{'
          '}';
 
 input : 'inputs:' paramList?;
-output : 'output:' assigment;
+output : 'output:' paramList?;
 
 paramList : assigment (',' assigment)*;
 
