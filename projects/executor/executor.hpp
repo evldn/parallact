@@ -1,5 +1,5 @@
-#ifndef PARALLELLANGUAGE_EXECUTOR_H
-#define PARALLELLANGUAGE_EXECUTOR_H
+#ifndef EXECUTOR_EXECUTOR_HPP
+#define EXECUTOR_EXECUTOR_HPP
 #include <functional>
 #include <string>
 #include <unordered_map>
@@ -20,4 +20,4 @@ private:
     std::unordered_map<std::string, std::vector<std::string>> dependencies;
 };
 
-#endif //PARALLELLANGUAGE_EXECUTOR_H
+#endif // EXECUTOR_EXECUTOR_HPP

@@ -1,4 +1,4 @@
-#include "executor.h"
+#include "executor.hpp"
 
 void Executor::addFunction(const std::string& name, const Function& function) {
         functions[name] = function;
